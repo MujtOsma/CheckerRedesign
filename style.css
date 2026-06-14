@@ -200,7 +200,7 @@ a {
 }
 .logo-mark svg { width: 26px; height: 26px; }
 .logo-mark svg { width: 26px; height: 26px; }
-.logo-mark img { width: 68px; height: 68px; object-fit: contain; }
+.logo-mark img { width: 120px; height: 120px; object-fit: contain; }
 
 .logo-text {
   display: flex;
