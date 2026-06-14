@@ -198,6 +198,9 @@ a {
   flex-shrink: 0;
 }
 .logo-mark svg { width: 26px; height: 26px; }
+.logo-mark svg { width: 26px; height: 26px; }
+.logo-mark img { width: 26px; height: 26px; object-fit: contain; }
+
 .logo-text {
   display: flex;
   flex-direction: column;
