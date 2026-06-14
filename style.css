@@ -191,7 +191,7 @@ a {
   background: none;
   border-radius: 0;
   width: auto;
-  height: 72px;
+  height: 64px;
 }
 .logo-mark-plain img {
   width: auto;
@@ -200,7 +200,7 @@ a {
 }
 .logo-mark svg { width: 26px; height: 26px; }
 .logo-mark svg { width: 26px; height: 26px; }
-.logo-mark img { width: 26px; height: 26px; object-fit: contain; }
+.logo-mark img { width: 42px; height: 42px; object-fit: contain; }
 
 .logo-text {
   display: flex;
