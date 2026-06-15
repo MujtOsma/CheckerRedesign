@@ -133,6 +133,31 @@ function toggleFaq(questionEl) {
 })();
 
 
+/* ── FORM SUCCESS helper ──────────────────────────── */
+function showFormSuccess(form, message) {
+  form.style.display = 'none';
+
+  const success = document.createElement('div');
+  success.style.cssText = [
+    'background:#F5C200',
+    'color:#0d0d0d',
+    'border-radius:12px',
+    'padding:40px 32px',
+    'text-align:center',
+    'font-family:inherit',
+  ].join(';');
+  success.innerHTML = [
+    '<div style="font-size:48px;margin-bottom:16px">✓</div>',
+    '<h3 style="font-size:22px;font-weight:800;margin:0 0 10px">' + message.heading + '</h3>',
+    '<p style="font-size:15px;margin:0 0 24px;opacity:.85">' + message.body + '</p>',
+    '<a href="tel:5196590400" style="display:inline-block;background:#0d0d0d;color:#F5C200;font-weight:700;padding:12px 28px;border-radius:6px;text-decoration:none;font-size:15px">',
+    'Or call us now — (519) 659-0400',
+    '</a>',
+  ].join('');
+
+  form.parentNode.appendChild(success);
+}
+
 /* ── CONTACT FORM submission handler ─────────────── */
 (function initContactForm() {
   const form = document.getElementById('contactForm');
@@ -140,13 +165,10 @@ function toggleFaq(questionEl) {
 
   form.addEventListener('submit', function (e) {
     e.preventDefault();
-    const btn = form.querySelector('.form-submit-btn');
-    if (btn) {
-      btn.textContent = 'Message Sent ✓';
-      btn.style.background = '#2e7d32';
-      btn.style.color = '#fff';
-      btn.disabled = true;
-    }
+    showFormSuccess(form, {
+      heading: 'Message Received!',
+      body:    'Thank you — a Checker representative will be in touch with you shortly. We\'re available 24/7 if you need a faster response.',
+    });
   });
 })();
 
@@ -158,13 +180,10 @@ function toggleFaq(questionEl) {
 
   form.addEventListener('submit', function (e) {
     e.preventDefault();
-    const btn = form.querySelector('.form-submit-btn');
-    if (btn) {
-      btn.textContent = 'Inquiry Received ✓';
-      btn.style.background = '#2e7d32';
-      btn.style.color = '#fff';
-      btn.disabled = true;
-    }
+    showFormSuccess(form, {
+      heading: 'Business Inquiry Received!',
+      body:    'We\'ll review your details and have a Checker representative reach out within one business day to get your account set up.',
+    });
   });
 })();
 
