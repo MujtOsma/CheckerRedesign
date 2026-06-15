@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Checker — London, Ontario's premier taxi and limousine service. Reliable, professional, 24/7 booking. Know Before You Go pricing. Book online or call (519) 659-0400." />
+  <title>Checker | Ride In Style — London, Ontario's Premier Taxi &amp; Limousine Service</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════
+     HEADER — Fixed navigation bar
+════════════════════════════════════════════════════ -->
+<header id="header">
+  <div class="container">
+    <div class="header-inner">
+
+      <!-- Logo -->
+      <a href="#hero" class="logo">
+        <div class="logo-mark logo-mark-plain">
+          <img src="images/logo.png" alt="Checker Logo" />
+        </div>
+        <div class="logo-text">
+          <span class="logo-name">LIMOUSINE</span>
+          <span class="logo-tagline">Ride In Style · London, ON</span>
+        </div>
+      </a>
+
+      <!-- Desktop nav -->
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#fleet">Our Fleet</a>
+        <a href="#airport">Airport</a>
+        <a href="#business">Business</a>
+        <a href="#app">App</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <!-- Desktop CTA -->
+      <div class="header-cta">
+        <div class="header-phone">
+          <div>Available <span>24/7</span></div>
+          <div><span>(519) 659-0400</span></div>
+        </div>
+        <a href="tel:5196590400" class="btn btn-primary">Book Now</a>
+      </div>
+
+      <!-- Hamburger (mobile) -->
+      <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#services" onclick="toggleMenu()">Services</a>
+    <a href="#fleet"    onclick="toggleMenu()">Our Fleet</a>
+    <a href="#airport"  onclick="toggleMenu()">Airport Service</a>
+    <a href="#business" onclick="toggleMenu()">Business Travel</a>
+    <a href="#app"      onclick="toggleMenu()">Get the App</a>
+    <a href="#faq"      onclick="toggleMenu()">FAQ</a>
+    <a href="#contact"  onclick="toggleMenu()">Contact</a>
+    <a href="tel:5196590400" class="btn btn-primary">&#128222; Book Now — (519) 659-0400</a>
+  </div>
+</header>
+
+
+<!-- ═══════════════════════════════════════════════════
+     HERO
+════════════════════════════════════════════════════ -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="container">
+    <div class="hero-content">
+
+      <div class="hero-eyebrow">
+        <div class="hero-line"></div>
+        <span class="hero-eyebrow-text">London's Premier Taxi &amp; Limousine Service</span>
+      </div>
+
+      <h1 class="hero-title">
+        RIDE<br>
+        <span class="accent-line">IN STYLE.</span>
+      </h1>
+
+      <p class="hero-sub">
+        <strong>London's only "Know Before You Go" pricing.</strong> Professional drivers,
+        luxury vehicles, and 24/7 booking — airport transfers, corporate travel, and
+        everyday rides done right.
+      </p>
+
+      <div class="hero-actions">
+        <a href="tel:5196590400" class="btn btn-primary btn-lg">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81 19.79 19.79 0 01.01 2.2 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+          </svg>
+          Call to Book — (519) 659-0400
+        </a>
+        <a href="#services" class="btn btn-outline btn-lg">Explore Services &rarr;</a>
+      </div>
+
+      <!-- App badges -->
+      <div class="hero-app-badges">
+        <a href="https://apps.apple.com/ca/app/gochecker/id931919624" target="_blank" rel="noopener" class="app-badge">
+          <svg viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          <span class="store-btn-text"><small>Download on the</small>App Store</span>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.limolabs.gochecker" target="_blank" rel="noopener" class="app-badge">
+          <svg viewBox="0 0 24 24"><path d="M3.18 23.76c.3.17.64.24.99.2l12.45-7.2-2.55-2.55-10.89 9.55zM.93 1.24C.58 1.57.37 2.07.37 2.71v18.58c0 .64.21 1.14.56 1.47l.08.07 10.41-10.41v-.24L.93 1.24zM20.3 10.27l-2.55-1.47-2.83 2.83 2.83 2.83 2.57-1.48c.73-.42.73-1.11-.02-1.71zM4.17.24L16.62 7.44l-2.55 2.55L3.18.44c.35-.34.7-.41.99-.2z"/></svg>
+          <span class="store-btn-text"><small>Get it on</small>Google Play</span>
+        </a>
+      </div>
+
+      <!-- Stats strip -->
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-num">30+</div>
+          <div class="stat-desc">Years Serving London</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">24/7</div>
+          <div class="stat-desc">Live Booking Agents</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">YXU</div>
+          <div class="stat-desc">Airport Transfers</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">$0</div>
+          <div class="stat-desc">Surge Pricing — Ever</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════
+     TRUST BAR
+════════════════════════════════════════════════════ -->
+<div id="trust">
+  <div class="container">
+    <div class="trust-inner">
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <span>Licensed &amp; Insured Drivers</span>
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <span>Available 24 Hours a Day, 7 Days a Week</span>
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+        <span>Know Before You Go — Flat-Rate Pricing</span>
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+        <span>App Booking — Book in Under 10 Seconds</span>
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span>Proudly Based in London, Ontario</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════
+     SERVICES
+════════════════════════════════════════════════════ -->
+<section id="services" class="section">
+  <div class="container">
+
+    <div class="services-header reveal">
+      <span class="label">What We Offer</span>
+      <h2 class="heading-lg">Every Ride. <span class="yellow">Done Right.</span></h2>
+      <div class="divider" style="margin:20px auto"></div>
+      <p class="subtext">From a quick city ride to a seamless airport transfer or a polished corporate trip — Checker delivers the same professional, punctual service every time.</p>
+    </div>
+
+    <div class="grid-3">
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <h3>City Rides</h3>
+        <p>Need to get across town? Our drivers come to you — on time, every time. No surprises, no surge pricing. Just a clean, comfortable ride.</p>
+        <a href="#contact" class="service-link">Book a Ride &rarr;</a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81"/><path d="M1 1l22 22"/><path d="M16.72 11.06A10.94 10.94 0 0119 12.55"/><path d="M11.5 7.335A10.97 10.97 0 0121.34 17.1"/></svg>
+        </div>
+        <h3>Airport Service</h3>
+        <p>Door-to-door airport transfers to and from London International (YXU). Flight-aware scheduling, luggage assist, and on-time pickup — guaranteed.</p>
+        <a href="#airport" class="service-link">Learn More &rarr;</a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+        </div>
+        <h3>Business Travel</h3>
+        <p>Corporate accounts, automated receipts, and professional drivers in immaculate vehicles. Impress clients. Streamline your team's travel.</p>
+        <a href="#business" class="service-link">Set Up Account &rarr;</a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+        </div>
+        <h3>GoChecker App</h3>
+        <p>Book in under 10 seconds. Track your driver live. Pay with your card right in the app. Schedule future rides. No cash, no hassle.</p>
+        <a href="#app" class="service-link">Download Free &rarr;</a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M20 12V22H4V12"/><path d="M22 7H2v5h20V7z"/><path d="M12 22V7"/><path d="M12 7H7.5a2.5 2.5 0 010-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 000-5C13 2 12 7 12 7z"/></svg>
+        </div>
+        <h3>Gift Cards</h3>
+        <p>Give the gift of a great ride. Our reloadable GoChecker gift cards are perfect for friends, family, or employees. Convenient and easy to use.</p>
+        <a href="#giftcards" class="service-link">Shop Gift Cards &rarr;</a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <h3>24/7 Live Booking</h3>
+        <p>Real people, not bots. Our booking agents are available around the clock — call any time to schedule your ride, ask questions, or get help.</p>
+        <a href="tel:5196590400" class="service-link">(519) 659-0400 &rarr;</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════
+     FLEET
+════════════════════════════════════════════════════ -->
+<section id="fleet" class="section">
+  <div class="container">
+
+    <div class="fleet-intro reveal">
+      <span class="label">Our Fleet</span>
+      <h2 class="heading-lg">Vehicles Built<br>for <span class="yellow">Every Standard.</span></h2>
+      <div class="divider"></div>
+      <p>Every Checker vehicle is a late-model, meticulously maintained luxury SUV. All-black leather interiors, immaculate condition, and professional drivers dressed to match. This isn't a taxi — this is a standard.</p>
+    </div>
+
+    <div class="fleet-grid">
+
+      <!-- 2023 GMC Yukon Denali XL -->
+      <div class="fleet-card reveal">
+        <div class="fleet-img-wrap">
+          <img src="https://images.unsplash.com/photo-1551830820-330a71b99659?w=800&q=80"
+               alt="2023 GMC Yukon Denali XL — Midnight Black"
+               loading="lazy" />
+          <div class="fleet-badge"><span class="tag">Flagship</span></div>
+          <div class="fleet-color-dots">
+            <div class="color-dot dot-black" title="Midnight Black"></div>
+          </div>
+        </div>
+        <div class="fleet-body">
+          <div class="fleet-year">2023</div>
+          <div class="fleet-name">GMC YUKON</div>
+          <div class="fleet-trim">Denali XL &middot; Midnight Black</div>
+          <div class="fleet-specs">
+            <div class="fleet-spec">
+              <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+              7 Passengers
+            </div>
+            <div class="fleet-spec">
+              <svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 002 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+              Full-Size SUV
+            </div>
+          </div>
+          <div class="fleet-features">
+            <div class="fleet-feature">Heated &amp; Ventilated Denali Leather</div>
+            <div class="fleet-feature">Panoramic Sunroof &amp; Tri-Zone Climate</div>
+            <div class="fleet-feature">Premium Bose Audio System</div>
+            <div class="fleet-feature">Extended Cargo for Luggage</div>
+            <div class="fleet-feature">Super Cruise Driver Assist</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2022 Lexus RX 350 -->
+      <div class="fleet-card reveal">
+        <div class="fleet-img-wrap">
+          <img src="https://images.unsplash.com/photo-1625047509168-a7026f36de04?w=800&q=80"
+               alt="2022 Lexus RX 350 — White and Black"
+               loading="lazy" />
+          <div class="fleet-badge"><span class="tag">Premium</span></div>
+          <div class="fleet-color-dots">
+            <div class="color-dot dot-white" title="Ultra White"></div>
+            <div class="color-dot dot-black" title="Obsidian Black"></div>
+          </div>
+        </div>
+        <div class="fleet-body">
+          <div class="fleet-year">2022</div>
+          <div class="fleet-name">LEXUS RX 350</div>
+          <div class="fleet-trim">Luxury SUV &middot; White &amp; Black Available</div>
+          <div class="fleet-specs">
+            <div class="fleet-spec">
+              <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+              5 Passengers
+            </div>
+            <div class="fleet-spec">
+              <svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 002 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+              Luxury SUV
+            </div>
+          </div>
+          <div class="fleet-features">
+            <div class="fleet-feature">NuLuxe Black Leather Interior</div>
+            <div class="fleet-feature">Mark Levinson 15-Speaker Audio</div>
+            <div class="fleet-feature">Dual-Zone Climate Control</div>
+            <div class="fleet-feature">Lexus Safety System+ 2.0</div>
+            <div class="fleet-feature">Panoramic Glass Roof</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Toyota Highlander 2020+ -->
+      <div class="fleet-card reveal">
+        <div class="fleet-img-wrap">
+          <img src="https://images.unsplash.com/photo-1609521263047-f8f205293f24?w=800&q=80"
+               alt="Toyota Highlander 7-Seat — White and Black"
+               loading="lazy" />
+          <div class="fleet-badge"><span class="tag">7 Seat</span></div>
+          <div class="fleet-color-dots">
+            <div class="color-dot dot-white" title="Blizzard Pearl White"></div>
+            <div class="color-dot dot-black" title="Midnight Black"></div>
+          </div>
+        </div>
+        <div class="fleet-body">
+          <div class="fleet-year">2020+</div>
+          <div class="fleet-name">TOYOTA</div>
+          <div class="fleet-trim">Highlander XLE &middot; White &amp; Black Available</div>
+          <div class="fleet-specs">
+            <div class="fleet-spec">
+              <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+              7 Passengers
+            </div>
+            <div class="fleet-spec">
+              <svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 002 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+              3-Row SUV
+            </div>
+          </div>
+          <div class="fleet-features">
+            <div class="fleet-feature">SofTex Black Leather Seating</div>
+            <div class="fleet-feature">3-Row Seating for Groups</div>
+            <div class="fleet-feature">JBL Premium Audio</div>
+            <div class="fleet-feature">Toyota Safety Sense 2.0</div>
+            <div class="fleet-feature">Generous Cargo &amp; Legroom</div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /.fleet-grid -->
+
+
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════
+     WHY CHECKER
+════════════════════════════════════════════════════ -->
+<section id="why" class="section">
+  <div class="container">
+    <div class="why-inner">
+
+      <div class="why-img-wrap reveal">
+        <img src="https://images.unsplash.com/photo-1592878904946-b3cd8ae243d4?w=900&q=80"
+             alt="Professional Checker driver in suit standing beside luxury SUV"
+             loading="lazy" />
+        <div class="why-img-badge">
+          <strong>30+</strong>
+          <span>Years Serving<br>London, ON</span>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <span class="label">The Checker Difference</span>
+        <h2 class="heading-lg">This Is Not<br><span class="yellow">Just a Taxi.</span></h2>
+        <div class="divider"></div>
+        <p class="subtext">We've spent over three decades earning London's trust. When you ride with Checker, you know exactly who's picking you up, what you'll pay, and that the car will be there.</p>
+
+        <div class="why-points">
+          <div class="why-point">
+            <div class="why-point-icon">
+              <svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+            </div>
+            <div>
+              <h4>Know Before You Go Pricing</h4>
+              <p>London's only transparent, flat-rate fare system. No meter anxiety. You know your price the moment you book.</p>
+            </div>
+          </div>
+          <div class="why-point">
+            <div class="why-point-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div>
+              <h4>No Surge Pricing — Ever</h4>
+              <p>Friday night, storm warning, or New Year's Eve — our rates don't move. Fair pricing, every single time.</p>
+            </div>
+          </div>
+          <div class="why-point">
+            <div class="why-point-icon">
+              <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <div>
+              <h4>Vetted, Professional Drivers</h4>
+              <p>Every driver is background-checked, licensed, and trained to represent the Checker standard — suited, courteous, and punctual.</p>
+            </div>
+          </div>
+          <div class="why-point">
+            <div class="why-point-icon">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <h4>On-Time or We Make It Right</h4>
+              <p>We've built our reputation on reliability. Book ahead with confidence — we will be there.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════
+     AIRPORT SERVICE
+════════════════════════════════════════════════════ -->
+<section id="airport" class="section">
+  <div class="container">
+    <div class="airport-inner">
+
+      <div class="reveal">
+        <span class="label">Just Go Airport</span>
+        <h2 class="heading-lg">Your Flight.<br><span class="yellow">Our Problem.</span></h2>
+        <div class="divider"></div>
+        <p class="subtext">We handle every detail of your airport transfer so you can focus on your trip. Door-to-door service to and from London International Airport (YXU) and beyond.</p>
+
+        <div class="airport-points">
+          <div class="airport-point">
+            <div class="airport-point-icon">
+              <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+            </div>
+            <div>
+              <h4>Door-to-Door Pickup</h4>
+              <p>We come to your front door and drop you at your terminal entrance. No parking, no shuttles, no stress.</p>
+            </div>
+          </div>
+          <div class="airport-point">
+            <div class="airport-point-icon">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07"/><path d="M2 2l20 20"/></svg>
+            </div>
+            <div>
+              <h4>Luggage Assistance Included</h4>
+              <p>Your driver helps load and unload your bags. Travelling with the whole family? Our 7-seat vehicles have room for everyone and everything.</p>
+            </div>
+          </div>
+          <div class="airport-point">
+            <div class="airport-point-icon">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <h4>Schedule in Advance</h4>
+              <p>Book your airport ride days or weeks ahead. Our agents confirm your booking and follow up so nothing falls through the cracks.</p>
+            </div>
+          </div>
+          <div class="airport-point">
+            <div class="airport-point-icon">
+              <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <h4>Destination Pickup</h4>
+              <p>Picking someone up at the airport? We'll coordinate the arrival and be waiting at the right door — no circling, no waiting in traffic.</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="tel:5196590400" class="btn btn-primary btn-lg" style="margin-top:32px">Book Your Airport Ride &rarr;</a>
+      </div>
+
+      <div class="airport-img reveal">
+        <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=900&q=80"
+             alt="London International Airport YXU tarmac"
+             loading="lazy" />
+        <div class="airport-img-badge">
+          <strong>YXU</strong>
+          <span>London Int'l Airport</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════
+     BUSINESS TRAVEL
+════════════════════════════════════════════════════ -->
+<section id="business" class="section">
+  <div class="container">
+    <div class="business-inner">
+
+      <div class="reveal">
+        <span class="label">Just Go Business</span>
+        <h2 class="heading-lg">Corporate Travel.<br><span class="yellow">Simplified.</span></h2>
+        <div class="divider"></div>
+        <p class="subtext">London businesses trust Checker for executive travel, client pickup, and team transport. Set up a corporate account and remove the friction from every business ride.</p>
+
+        <div class="biz-perks">
+          <div class="biz-perk">
+            <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            <h4>Digital Receipts</h4>
+            <p>Automated invoices sent after every trip. Expense reporting made effortless.</p>
+          </div>
+          <div class="biz-perk">
+            <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            <h4>Team Accounts</h4>
+            <p>Multiple users, one account. Book rides for your entire team from one dashboard.</p>
+          </div>
+          <div class="biz-perk">
+            <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+            <h4>Priority Dispatch</h4>
+            <p>Business accounts receive priority booking and dedicated agent support.</p>
+          </div>
+          <div class="biz-perk">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <h4>Always Professional</h4>
+            <p>Impress your clients. Suited drivers, spotless vehicles, every booking.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Business inquiry form -->
+      <div class="biz-form-wrap reveal">
+        <h3>Set Up Your Business Account</h3>
+        <p>Fill out the form below and a Checker representative will be in touch within one business day.</p>
+        <form id="bizForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="biz-fname">First Name</label>
+              <input type="text" id="biz-fname" placeholder="Jane" required />
+            </div>
+            <div class="form-group">
+              <label for="biz-lname">Last Name</label>
+              <input type="text" id="biz-lname" placeholder="Smith" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="biz-company">Company Name</label>
+            <input type="text" id="biz-company" placeholder="Acme Corp." required />
+          </div>
+          <div class="form-group">
+            <label for="biz-email">Business Email</label>
+            <input type="email" id="biz-email" placeholder="jane@company.com" required />
+          </div>
+          <div class="form-group">
+            <label for="biz-phone">Phone Number</label>
+            <input type="tel" id="biz-phone" placeholder="(519) 000-0000" />
+          </div>
+          <div class="form-group">
+            <label for="biz-rides">Estimated Monthly Rides</label>
+            <select id="biz-rides">
+              <option value="">Select an option&hellip;</option>
+              <option>1–5 rides</option>
+              <option>6–20 rides</option>
+              <option>21–50 rides</option>
+              <option>50+ rides</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="biz-notes">Additional Notes</label>
+            <textarea id="biz-notes" placeholder="Tell us about your travel needs&hellip;"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit-btn" style="width:100%;justify-content:center;padding:16px">
+            Submit Business Inquiry &rarr;
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════
+     GET THE APP
+════════════════════════════════════════════════════ -->
+<section id="app" class="section">
+  <div class="app-bg-accent"></div>
+  <div class="container">
+    <div class="app-inner">
+
+      <div class="reveal">
+        <span class="label">GoChecker App</span>
+        <h2 class="heading-lg">Your Ride.<br><span class="yellow">In Your Pocket.</span></h2>
+        <div class="divider"></div>
+        <p class="subtext">The free GoChecker app puts London's most professional ride service at your fingertips. Download once — ride better, forever.</p>
+
+        <div class="app-features">
+          <div class="app-feature">
+            <div class="app-feature-num">01</div>
+            <div>
+              <h4>Book in Under 10 Seconds</h4>
+              <p>GPS auto-fills your location. Tap, confirm, done. Your Checker is on the way.</p>
+            </div>
+          </div>
+          <div class="app-feature">
+            <div class="app-feature-num">02</div>
+            <div>
+              <h4>Live Driver Tracking</h4>
+              <p>Watch your driver's icon move toward you in real time. No guessing, no calling.</p>
+            </div>
+          </div>
+          <div class="app-feature">
+            <div class="app-feature-num">03</div>
+            <div>
+              <h4>Credit Card In-App Payments</h4>
+              <p>No cash. No debit fees. Tap to pay inside the app — receipt delivered instantly.</p>
+            </div>
+          </div>
+          <div class="app-feature">
+            <div class="app-feature-num">04</div>
+            <div>
+              <h4>Schedule Future Rides</h4>
+              <p>Book your airport pickup three weeks out. The app handles the reminder and confirmation.</p>
+            </div>
+          </div>
+          <div class="app-feature">
+            <div class="app-feature-num">05</div>
+            <div>
+              <h4>Promo Codes &amp; Saved Addresses</h4>
+              <p>Save your home, office, and airport for one-tap booking. Apply promo codes at checkout.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="app-download-btns">
+          <a href="https://apps.apple.com/ca/app/gochecker/id931919624" target="_blank" rel="noopener" class="store-btn">
+            <svg viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            <div class="store-btn-text"><small>Download on the</small>App Store</div>
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.limolabs.gochecker" target="_blank" rel="noopener" class="store-btn">
+            <svg viewBox="0 0 24 24"><path d="M3.18 23.76c.3.17.64.24.99.2l12.45-7.2-2.55-2.55-10.89 9.55zM.93 1.24C.58 1.57.37 2.07.37 2.71v18.58c0 .64.21 1.14.56 1.47l.08.07 10.41-10.41v-.24L.93 1.24zM20.3 10.27l-2.55-1.47-2.83 2.83 2.83 2.83 2.57-1.48c.73-.42.73-1.11-.02-1.71zM4.17.24L16.62 7.44l-2.55 2.55L3.18.44c.35-.34.7-.41.99-.2z"/></svg>
+            <div class="store-btn-text"><small>Get it on</small>Google Play</div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Phone mockup -->
+      <div class="app-phone-mock reveal">
+        <div class="phone-frame">
+          <div class="phone-screen">
+            <div class="phone-app-logo">
+              <svg width="36" height="36" viewBox="0 0 26 26" fill="none">
+                <path d="M4 13C4 8.03 8.03 4 13 4C17.97 4 22 8.03 22 13C22 17.97 17.97 22 13 22" stroke="#0D0D0D" stroke-width="2.2" stroke-linecap="round"/>
+                <path d="M9 13L12 16L18 10" stroke="#0D0D0D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="phone-app-name">GOCHECKER</div>
+            <div class="phone-app-sub">London's Ride In Style App</div>
+            <div class="phone-book-btn">Book a Ride &rarr;</div>
+            <div class="phone-track">
+              <div class="phone-track-label">Driver En Route</div>
+              <div class="phone-track-info">Your Checker — 3 min away</div>
+              <div class="phone-track-sub">2023 GMC Yukon &middot; Midnight Black</div>
+            </div>
+            <div class="phone-fare">
+              <span>Est. Fare</span>
+              <span class="phone-fare-amount">$24.00</span>
+            </div>
+            <div class="phone-dots">
+              <div class="phone-dot active"></div>
+              <div class="phone-dot"></div>
+              <div class="phone-dot"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════
+     TESTIMONIALS
+════════════════════════════════════════════════════ -->
+<section id="testimonials" class="section">
+  <div class="container">
+
+    <div class="testimonials-header reveal">
+      <span class="label">What Riders Say</span>
+      <h2 class="heading-lg">London Trusts <span class="yellow">Checker.</span></h2>
+      <div class="divider" style="margin:20px auto"></div>
+    </div>
+
+    <div class="testimonials-grid">
+      <div class="testimonial-card reveal">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="testimonial-text">"As easy to book and pay as Uber — but with credit card payment, clean cars, well-dressed drivers, and no surge pricing. The Lexus was immaculate. Best ride service in London by a mile."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">M</div>
+          <div>
+            <div class="author-name">Michael T.</div>
+            <div class="author-meta">London, ON &middot; App Review</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="testimonial-text">"Pre-booked for an early airport run and the car was there 5 minutes early. Driver helped with luggage, no fuss. This is how airport pickups should work. Will always use Checker."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">S</div>
+          <div>
+            <div class="author-name">Sandra K.</div>
+            <div class="author-meta">London, ON &middot; Google Review</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="testimonial-text">"I use Checker for all my client pickups. The Yukon Denali is stunning — my clients always comment on the vehicle. Knowing the price upfront means no awkward moments either. Perfect."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">R</div>
+          <div>
+            <div class="author-name">Robert A.</div>
+            <div class="author-meta">London, ON &middot; Business Client</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="testimonial-text">"Downloaded the app and had a car booked in about 8 seconds. Watched it on the map come straight to me. Contactless, cashless, smooth. Way better than I expected from a local service."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">L</div>
+          <div>
+            <div class="author-name">Laura M.</div>
+            <div class="author-meta">London, ON &middot; App Store Review</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="testimonial-text">"Been using Checker for over 10 years. Call with advance booking and the car will always be there — (519) 659-0400. Never let me down once. You get what you pay for, and then some."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">F</div>
+          <div>
+            <div class="author-name">Frank G.</div>
+            <div class="author-meta">London, ON &middot; Long-Time Customer</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="testimonial-text">"Serving London for 30 years for a reason. Safe, friendly, personal — and these vehicles are something else. Riding in the Highlander with my family felt like a proper luxury transfer."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">D</div>
+          <div>
+            <div class="author-name">Diana P.</div>
+            <div class="author-meta">London, ON &middot; Facebook Review</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════
+     GIFT CARDS
+════════════════════════════════════════════════════ -->
+<section id="giftcards" class="section-sm">
+  <div class="container">
+    <div class="gift-inner">
+      <div class="gift-bg"></div>
+      <div class="gift-bg-2"></div>
+
+      <div class="gift-text reveal">
+        <span class="label">GoChecker Gift Cards</span>
+        <div class="gift-heading">Give the Gift<br>of a Great Ride.</div>
+        <p class="gift-sub">Reloadable. Convenient. Always the right size. GoChecker Gift Cards are perfect for anyone who deserves to ride in style — friends, family, or your team.</p>
+        <div class="gift-actions">
+          <a href="tel:5196590400" class="btn btn-black btn-lg">Call to Order — (519) 659-0400</a>
+          <a href="mailto:info@gochecker.ca" class="btn" style="background:rgba(0,0,0,0.15);color:#000;font-weight:700">Email Us</a>
+        </div>
+      </div>
+
+      <div class="gift-card-visual reveal">
+        <div class="gift-card gift-card-1">
+          <div class="gift-card-logo">CHECKER</div>
+          <div>
+            <div class="gift-card-label">Gift Card</div>
+            <div class="gift-card-amt">$50</div>
+          </div>
+        </div>
+        <div class="gift-card gift-card-2">
+          <div class="gift-card-logo">CHECKER</div>
+          <div>
+            <div class="gift-card-label">Gift Card</div>
+            <div class="gift-card-amt">$100</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════
+     MEET YOUR DRIVER
+════════════════════════════════════════════════════ -->
+<section id="drivers" class="section">
+  <div class="container">
+    <div class="drivers-inner">
+
+      <div class="drivers-img reveal">
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=900&q=80"
+             alt="Professional Checker driver in suit"
+             loading="lazy" />
+      </div>
+
+      <div class="reveal">
+        <span class="label">Meet Your Driver</span>
+        <h2 class="heading-lg">The Standard<br><span class="yellow">You Expect.</span></h2>
+        <div class="divider"></div>
+        <p class="subtext">Every Checker driver is more than just a driver. They're a professional — background-checked, trained, and committed to making every ride feel first-class.</p>
+
+        <div class="driver-standards">
+          <div class="driver-std">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span>Thorough background check — every driver, no exceptions</span>
+          </div>
+          <div class="driver-std">
+            <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            <span>Professional dress — suited and presented for every booking</span>
+          </div>
+          <div class="driver-std">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Punctual — on time or we make it right</span>
+          </div>
+          <div class="driver-std">
+            <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+            <span>Courteous and discreet — your ride, your privacy</span>
+          </div>
+          <div class="driver-std">
+            <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <span>Fully licensed and insured — City of London certified</span>
+          </div>
+          <div class="driver-std">
+            <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+            <span>Experienced with corporate, airport, and special occasion rides</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════
+     FAQ
+════════════════════════════════════════════════════ -->
+<section id="faq" class="section">
+  <div class="container">
+    <div class="faq-inner">
+
+      <div class="faq-sidebar reveal">
+        <span class="label">FAQ</span>
+        <h2 class="heading-md">Common<br><span class="yellow">Questions.</span></h2>
+        <div class="divider"></div>
+        <p class="subtext" style="font-size:15px">Can't find what you're looking for? Our agents are available 24/7.</p>
+        <a href="tel:5196590400" class="btn btn-primary" style="margin-top:24px">(519) 659-0400</a>
+      </div>
+
+      <div class="faq-list reveal">
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            How do I book a ride with Checker?
+            <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </div>
+          <div class="faq-answer">You can book in three ways: call our 24/7 booking agents at (519) 659-0400, download the free GoChecker app on iOS or Android, or email us at info@gochecker.ca. The app is the fastest — you'll have a car on the way in under 10 seconds.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            What is "Know Before You Go" pricing?
+            <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </div>
+          <div class="faq-answer">Checker is the only service in London that gives you your fare upfront — before you confirm the booking. No meters. No surprises. You know exactly what you'll pay before your driver arrives, every time.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            Is there surge pricing at busy times?
+            <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </div>
+          <div class="faq-answer">Never. Checker does not use surge pricing — ever. Whether it's New Year's Eve, a snowstorm, or a Friday night, your fare is your fare. Flat rates, always.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            Can I schedule a ride in advance?
+            <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </div>
+          <div class="faq-answer">Absolutely. You can schedule a ride days or weeks in advance through the GoChecker app or by calling (519) 659-0400. We strongly recommend advance booking for airport transfers to guarantee your pickup time.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            What payment methods do you accept?
+            <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </div>
+          <div class="faq-answer">We accept credit cards through the GoChecker app (no debit fees), GoChecker Gift Cards, corporate account billing, and cash directly with your driver.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            Do you serve London International Airport (YXU)?
+            <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </div>
+          <div class="faq-answer">Yes — airport transfers are one of our most popular services. We provide door-to-door service to and from London International Airport (YXU) with luggage assistance and advance scheduling. Call (519) 659-0400 to plan your airport trip.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            How do I set up a business account?
+            <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </div>
+          <div class="faq-answer">Fill out the business inquiry form above, or call us at (519) 659-0400. Business accounts get priority dispatch, automated digital receipts, and dedicated agent support.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            What vehicles are in the Checker fleet?
+            <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </div>
+          <div class="faq-answer">Our fleet includes the 2023 GMC Yukon Denali XL (7-seat, black), 2022 Lexus RX 350 (white and black), and 2020+ Toyota Highlander XLE (7-seat, white and black). All vehicles feature all-black leather interiors maintained in showroom condition.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            Where is Checker located?
+            <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </div>
+          <div class="faq-answer">Our offices are at 573 Admiral Court, London, ON, Canada. We serve all of London and surrounding areas. Reach us at (519) 659-0400 or info@gochecker.ca — available 24/7.</div>
+        </div>
+      </div><!-- /.faq-list -->
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════
+     CONTACT
+════════════════════════════════════════════════════ -->
+<section id="contact" class="section">
+  <div class="container">
+
+    <div class="contact-header reveal">
+      <span class="label">Get in Touch</span>
+      <h2 class="heading-lg">Ready to <span class="yellow">Ride In Style?</span></h2>
+      <div class="divider" style="margin:20px auto"></div>
+    </div>
+
+    <div class="contact-inner">
+
+      <!-- Contact info -->
+      <div class="reveal">
+        <span class="label">Contact Information</span>
+        <h3 class="heading-sm" style="margin-bottom:8px">We're Here<br><span class="yellow">24/7.</span></h3>
+
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81 19.79 19.79 0 01.01 2.2 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <div>
+              <h4>Phone</h4>
+              <a href="tel:5196590400">(519) 659-0400</a>
+              <p class="hours-note">Available 24 hours a day, 7 days a week</p>
+              <p class="fax">Fax: (519) 455-4402</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:info@gochecker.ca">info@gochecker.ca</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <h4>Address</h4>
+              <p>573 Admiral Court<br>London, ON, Canada N5V 4L3</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <h4>Hours</h4>
+              <p style="color:var(--yellow);font-weight:700;font-size:16px">Open 24/7 — Always</p>
+              <p class="hours-note">Booking agents available around the clock, every day of the year including holidays.</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </div>
+            <div>
+              <h4>Follow Us</h4>
+              <p style="margin-bottom:10px">Stay updated on news, deals, and more.</p>
+              <div class="social-links">
+                <a href="https://www.facebook.com/GoRideinStyle/" target="_blank" rel="noopener" class="social-link" title="Facebook">
+                  <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                </a>
+                <a href="https://apps.apple.com/ca/app/gochecker/id931919624" target="_blank" rel="noopener" class="social-link" title="App Store">
+                  <svg viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.limolabs.gochecker" target="_blank" rel="noopener" class="social-link" title="Google Play">
+                  <svg viewBox="0 0 24 24"><path d="M3.18 23.76c.3.17.64.24.99.2l12.45-7.2-2.55-2.55-10.89 9.55zM.93 1.24C.58 1.57.37 2.07.37 2.71v18.58c0 .64.21 1.14.56 1.47l.08.07 10.41-10.41v-.24L.93 1.24z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Map placeholder -->
+        <div class="map-embed">
+          <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div>
+            <strong>573 Admiral Court, London, ON</strong><br>
+            <a href="https://maps.google.com/?q=573+Admiral+Court+London+ON" target="_blank" rel="noopener">Open in Google Maps &rarr;</a>
+          </div>
+        </div>
+      </div><!-- /contact info -->
+
+      <!-- Contact form -->
+      <div class="contact-form reveal">
+        <h3>Send Us a Message</h3>
+        <p>Questions, booking requests, or feedback — we'll get back to you promptly.</p>
+        <form id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="c-fname">First Name</label>
+              <input type="text" id="c-fname" placeholder="Jane" required />
+            </div>
+            <div class="form-group">
+              <label for="c-lname">Last Name</label>
+              <input type="text" id="c-lname" placeholder="Smith" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="c-email">Email Address</label>
+            <input type="email" id="c-email" placeholder="jane@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="c-phone">Phone Number</label>
+            <input type="tel" id="c-phone" placeholder="(519) 000-0000" />
+          </div>
+          <div class="form-group">
+            <label for="c-subject">Subject</label>
+            <select id="c-subject">
+              <option value="">Select a topic&hellip;</option>
+              <option>Book a Ride</option>
+              <option>Airport Transfer</option>
+              <option>Business Account</option>
+              <option>Gift Card Inquiry</option>
+              <option>General Question</option>
+              <option>Feedback</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="c-message">Message</label>
+            <textarea id="c-message" placeholder="How can we help you?"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit-btn" style="width:100%;justify-content:center;padding:16px">
+            Send Message &rarr;
+          </button>
+        </form>
+        <p class="contact-form-note">Or call us directly anytime: <a href="tel:5196590400">(519) 659-0400</a></p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════
+     FOOTER PHONE STRIP
+════════════════════════════════════════════════════ -->
+<div class="footer-phone-strip">
+  <div class="container">
+    <div class="footer-phone-inner">
+      <div class="footer-phone-text"><span>Call 24/7 &rarr;</span> (519) 659-0400</div>
+      <a href="tel:5196590400" class="btn btn-black btn-lg">Book Your Ride Now</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════════ -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-top">
+
+      <!-- Brand -->
+      <div class="footer-brand">
+        <a href="#hero" class="logo">
+          <div class="logo-mark logo-mark-plain">
+            <img src="images/logo.png" alt="Checker Logo" />
+          </div>
+          <div class="logo-text">
+            <span class="logo-name">LIMOUSINE</span>
+            <span class="logo-tagline">Ride In Style</span>
+          </div>
+        </a>
+        <p>London's most trusted taxi and limousine service. Serving the city with safe, professional, and stylish transportation for over 30 years.</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/GoRideinStyle/" target="_blank" rel="noopener" class="social-link" title="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="https://apps.apple.com/ca/app/gochecker/id931919624" target="_blank" rel="noopener" class="social-link" title="App Store">
+            <svg viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.limolabs.gochecker" target="_blank" rel="noopener" class="social-link" title="Google Play">
+            <svg viewBox="0 0 24 24"><path d="M3.18 23.76c.3.17.64.24.99.2l12.45-7.2-2.55-2.55-10.89 9.55zM.93 1.24C.58 1.57.37 2.07.37 2.71v18.58c0 .64.21 1.14.56 1.47l.08.07 10.41-10.41v-.24L.93 1.24z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Services -->
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">City Rides</a></li>
+          <li><a href="#airport">Airport Transfers</a></li>
+          <li><a href="#business">Business Travel</a></li>
+          <li><a href="#giftcards">Gift Cards</a></li>
+          <li><a href="#app">GoChecker App</a></li>
+        </ul>
+      </div>
+
+      <!-- Company -->
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#why">About Checker</a></li>
+          <li><a href="#drivers">Our Drivers</a></li>
+          <li><a href="#fleet">Our Fleet</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:5196590400">(519) 659-0400</a></li>
+          <li><a href="mailto:info@gochecker.ca">info@gochecker.ca</a></li>
+          <li>
+            <a href="https://maps.google.com/?q=573+Admiral+Court+London+ON" target="_blank" rel="noopener">
+              573 Admiral Court,<br>London, ON N5V 4L3
+            </a>
+          </li>
+          <li><a href="#contact">Send a Message</a></li>
+        </ul>
+      </div>
+
+    </div><!-- /.footer-top -->
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Checker Car Service Ltd. &middot; London, Ontario &middot; All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="mailto:info@gochecker.ca">info@gochecker.ca</a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+<!-- Script -->
+<script src="script.js"></script>
+</body>
+</html>
